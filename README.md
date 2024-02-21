@@ -1,8 +1,5 @@
 # Kidney-Disease-Classification-Deep-Learning
 
-# how to run this project
-
-# clone the repostory
 
 ## workflows
 
@@ -25,3 +22,13 @@
 9.Update the dvc.yaml
 
 10.app.py
+
+# STEP 01- Create a conda environment after opening the repository
+'''conda create -n cnncls python=3.8 -y'''
+'''conda activate cnncls'''
+
+# STEP 02- install the requirements
+'''pip install -r requirements.txt'''
+
+# Finally run the following command
+python app.py
