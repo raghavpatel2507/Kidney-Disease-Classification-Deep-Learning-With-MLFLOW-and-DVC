@@ -6,8 +6,8 @@ notebook
 numpy
 matplotlib
 seaborn
-python-box==6.0.2
-pyYAML
+python-box==6.0.2 ##use for the exception handling
+pyYAML  ##reading the yaml file
 tqdm
 ensure==1.0.2
 joblib
