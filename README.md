@@ -41,3 +41,21 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
+
+# dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/raghavpatel2507/Kidney-Disease-Classification-Deep-Learning.mlflow \
+MLFLOW_TRACKING_USERNAME=raghavpatel2507 \
+MLFLOW_TRACKING_PASSWORD=ee9963e0e31b32b22da0a6fba87181560614bee1 \
+python script.py
+
+Run this to export as env variables:
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/raghavpatel2507/Kidney-Disease-Classification-Deep-Learning.mlflow 
+
+export MLFLOW_TRACKING_USERNAME=raghavpatel2507 
+export MLFLOW_TRACKING_PASSWORD=ee9963e0e31b32b22da0a6fba87181560614bee1
+
+```
