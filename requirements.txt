@@ -16,4 +16,5 @@ scipy
 Flask
 Flask-Cors
 gdown
+gunicorn==21.2.0
 -e .
