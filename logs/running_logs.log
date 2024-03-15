@@ -1075,3 +1075,63 @@ x==========x]
 [2024-03-09 08:51:00,079: INFO: _internal: 127.0.0.1 - - [09/Mar/2024 08:51:00] "POST /predict HTTP/1.1" 200 -]
 [2024-03-09 08:51:05,583: INFO: _internal: 127.0.0.1 - - [09/Mar/2024 08:51:05] "POST /predict HTTP/1.1" 200 -]
 [2024-03-09 08:51:10,619: INFO: _internal: 127.0.0.1 - - [09/Mar/2024 08:51:10] "POST /predict HTTP/1.1" 200 -]
+[2024-03-14 14:29:29,914: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-14 14:29:29,928: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-14 14:29:29,938: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-14 14:29:29,939: INFO: common: created directory at: artifacts]
+[2024-03-14 14:29:29,940: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-14 14:29:29,942: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-14 14:30:03,435: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.228.108:5000]
+[2024-03-14 14:30:03,436: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-14 14:30:08,564: INFO: _internal: 127.0.0.1 - - [14/Mar/2024 14:30:08] "GET / HTTP/1.1" 200 -]
+[2024-03-14 14:30:44,614: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-14 14:30:46,176: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-14 14:30:46,177: INFO: main: *******************]
+[2024-03-14 14:30:46,178: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-14 14:30:46,181: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-14 14:30:46,184: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-14 14:30:46,186: INFO: common: created directory at: artifacts]
+[2024-03-14 14:30:46,187: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-14 14:30:47,016: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-14 14:30:47,367: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-14 14:30:47,368: INFO: main: *******************]
+[2024-03-14 14:30:47,368: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-03-14 14:30:47,370: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-14 14:30:47,372: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-14 14:30:47,375: INFO: common: created directory at: artifacts]
+[2024-03-14 14:30:47,377: INFO: common: created directory at: artifacts\training]
+[2024-03-14 14:33:27,217: INFO: _internal: 127.0.0.1 - - [14/Mar/2024 14:33:27] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 12:49:59,838: INFO: stage_03_model_training: *******************]
+[2024-03-15 12:49:59,838: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-03-15 12:49:59,850: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-15 12:49:59,852: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-15 12:49:59,852: INFO: common: created directory at: artifacts]
+[2024-03-15 12:49:59,854: INFO: common: created directory at: artifacts\training]
+[2024-03-15 14:17:24,274: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-15 14:17:35,274: INFO: stage_04_model_evaluation: *******************]
+[2024-03-15 14:17:35,276: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-15 14:17:35,278: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-15 14:17:35,280: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-15 14:17:35,281: INFO: common: created directory at: artifacts]
+[2024-03-15 14:17:48,326: INFO: common: json file saved at: scores.json]
+[2024-03-15 14:17:48,329: INFO: common: json file saved at: scores.json]
+[2024-03-15 14:17:48,329: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-15 14:21:43,186: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-15 14:21:43,188: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-15 14:22:14,124: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 14:22:14] "GET / HTTP/1.1" 200 -]
+[2024-03-15 14:22:33,552: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 14:22:33] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 14:22:47,116: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 14:22:47] "POST /predict HTTP/1.1" 200 -]
