@@ -1149,3 +1149,299 @@ x==========x]
 [2024-03-15 14:25:12,362: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 14:25:12] "POST /predict HTTP/1.1" 200 -]
 [2024-03-15 14:25:20,020: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000020BE2879F80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
 [2024-03-15 14:25:20,026: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 14:25:20] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 14:59:11,381: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 14:59:11] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 22:58:44,392: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.129.108:5000]
+[2024-03-15 22:58:44,393: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-15 22:58:48,312: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:58:48] "GET / HTTP/1.1" 200 -]
+[2024-03-15 22:59:02,366: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:59:02] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 22:59:18,854: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:59:18] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 22:59:26,393: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:59:26] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 22:59:33,170: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:59:33] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 22:59:41,388: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001FEE90211C0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-15 22:59:41,397: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:59:41] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 22:59:52,618: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001FEEA21A020> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-15 22:59:52,628: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:59:52] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 22:59:59,901: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 22:59:59] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:00:07,960: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:00:07] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:00:20,701: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:00:20] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:00:26,423: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:00:26] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:00:41,812: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:00:41] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:00:50,755: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:00:50] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:00:57,329: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:00:57] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:01:05,614: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:01:05] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:01:17,952: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:01:17] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:01:26,238: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:01:26] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:01:37,186: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:01:37] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:04:56,668: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.129.108:5000]
+[2024-03-15 23:04:56,670: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-15 23:05:06,024: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:05:06] "GET / HTTP/1.1" 200 -]
+[2024-03-15 23:05:14,200: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:05:14] "POST /predict HTTP/1.1" 200 -]
+[2024-03-15 23:06:05,944: INFO: stage_03_model_training: *******************]
+[2024-03-15 23:06:05,945: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-03-15 23:06:05,948: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-15 23:06:05,952: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-15 23:06:05,953: INFO: common: created directory at: artifacts]
+[2024-03-15 23:06:05,955: INFO: common: created directory at: artifacts\training]
+[2024-03-15 23:06:11,658: ERROR: stage_03_model_training: Graph execution error:
+
+Detected at node 'categorical_crossentropy/softmax_cross_entropy_with_logits' defined at (most recent call last):
+    File "C:\Users\hp\OneDrive\Desktop\SGP\Kidney-Disease-Classification-Deep-Learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 30, in <module>
+      obj.main()
+    File "C:\Users\hp\OneDrive\Desktop\SGP\Kidney-Disease-Classification-Deep-Learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+      training.train()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+      self.model.fit(
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1249, in run_step
+      outputs = model.train_step(data)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1051, in train_step
+      loss = self.compute_loss(x, y, y_pred, sample_weight)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1109, in compute_loss
+      return self.compiled_loss(
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\compile_utils.py", line 265, in __call__
+      loss_value = loss_obj(y_t, y_p, sample_weight=sw)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\losses.py", line 142, in __call__
+      losses = call_fn(y_true, y_pred)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\losses.py", line 268, in call
+      return ag_fn(y_true, y_pred, **self._fn_kwargs)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\losses.py", line 1984, in categorical_crossentropy
+      return backend.categorical_crossentropy(
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\backend.py", line 5565, in categorical_crossentropy
+      return tf.nn.softmax_cross_entropy_with_logits(
+Node: 'categorical_crossentropy/softmax_cross_entropy_with_logits'
+logits and labels must be broadcastable: logits_size=[16,3] labels_size=[16,2]
+	 [[{{node categorical_crossentropy/softmax_cross_entropy_with_logits}}]] [Op:__inference_train_function_881]]
+Traceback (most recent call last):
+  File "C:\Users\hp\OneDrive\Desktop\SGP\Kidney-Disease-Classification-Deep-Learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 30, in <module>
+    obj.main()
+  File "C:\Users\hp\OneDrive\Desktop\SGP\Kidney-Disease-Classification-Deep-Learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+    training.train()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+    self.model.fit(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\tensorflow\python\eager\execute.py", line 58, in quick_execute
+    except TypeError as e:
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node 'categorical_crossentropy/softmax_cross_entropy_with_logits' defined at (most recent call last):
+    File "C:\Users\hp\OneDrive\Desktop\SGP\Kidney-Disease-Classification-Deep-Learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 30, in <module>
+      obj.main()
+    File "C:\Users\hp\OneDrive\Desktop\SGP\Kidney-Disease-Classification-Deep-Learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+      training.train()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+      self.model.fit(
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1249, in run_step
+      outputs = model.train_step(data)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1051, in train_step
+      loss = self.compute_loss(x, y, y_pred, sample_weight)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\training.py", line 1109, in compute_loss
+      return self.compiled_loss(
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\engine\compile_utils.py", line 265, in __call__
+      loss_value = loss_obj(y_t, y_p, sample_weight=sw)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\losses.py", line 142, in __call__
+      losses = call_fn(y_true, y_pred)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\losses.py", line 268, in call
+      return ag_fn(y_true, y_pred, **self._fn_kwargs)
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\losses.py", line 1984, in categorical_crossentropy
+      return backend.categorical_crossentropy(
+    File "C:\Users\hp\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\backend.py", line 5565, in categorical_crossentropy
+      return tf.nn.softmax_cross_entropy_with_logits(
+Node: 'categorical_crossentropy/softmax_cross_entropy_with_logits'
+logits and labels must be broadcastable: logits_size=[16,3] labels_size=[16,2]
+	 [[{{node categorical_crossentropy/softmax_cross_entropy_with_logits}}]] [Op:__inference_train_function_881]
+[2024-03-15 23:07:07,756: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.129.108:5000]
+[2024-03-15 23:07:07,758: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-15 23:07:10,959: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:07:10] "GET / HTTP/1.1" 200 -]
+[2024-03-15 23:07:18,472: INFO: _internal: 127.0.0.1 - - [15/Mar/2024 23:07:18] "POST /predict HTTP/1.1" 200 -]
+[2024-03-16 20:54:50,699: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-16 20:54:50,701: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-16 20:54:53,756: INFO: _internal: 127.0.0.1 - - [16/Mar/2024 20:54:53] "GET / HTTP/1.1" 200 -]
+[2024-03-16 20:55:10,072: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-16 20:55:10,083: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 20:55:10,086: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 20:55:10,087: INFO: common: created directory at: artifacts]
+[2024-03-16 20:55:10,090: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-16 20:55:10,091: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 20:59:19,433: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-16 20:59:20,823: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-16 20:59:20,824: INFO: main: *******************]
+[2024-03-16 20:59:20,824: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-16 20:59:20,827: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 20:59:20,830: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 20:59:20,832: INFO: common: created directory at: artifacts]
+[2024-03-16 20:59:20,833: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-16 20:59:21,788: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-16 20:59:22,148: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-16 20:59:22,149: INFO: main: *******************]
+[2024-03-16 20:59:22,149: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-03-16 20:59:22,152: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 20:59:22,156: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 20:59:22,157: INFO: common: created directory at: artifacts]
+[2024-03-16 20:59:22,159: INFO: common: created directory at: artifacts\training]
+[2024-03-16 21:11:14,873: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-16 21:11:14,873: INFO: main: *******************]
+[2024-03-16 21:11:14,874: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-16 21:11:14,875: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-16 21:11:14,877: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-16 21:11:14,878: INFO: common: created directory at: artifacts]
+[2024-03-16 21:11:29,645: INFO: common: json file saved at: scores.json]
+[2024-03-16 21:11:29,648: INFO: common: json file saved at: scores.json]
+[2024-03-16 21:11:29,648: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-16 21:11:30,450: INFO: _internal: 127.0.0.1 - - [16/Mar/2024 21:11:30] "GET /train HTTP/1.1" 200 -]
+[2024-03-16 21:11:48,406: INFO: _internal: 127.0.0.1 - - [16/Mar/2024 21:11:48] "GET / HTTP/1.1" 200 -]
+[2024-03-16 21:12:08,999: INFO: _internal: 127.0.0.1 - - [16/Mar/2024 21:12:08] "POST /predict HTTP/1.1" 200 -]
+[2024-03-16 21:12:17,131: INFO: _internal: 127.0.0.1 - - [16/Mar/2024 21:12:17] "POST /predict HTTP/1.1" 200 -]
+[2024-03-16 21:12:24,640: INFO: _internal: 127.0.0.1 - - [16/Mar/2024 21:12:24] "POST /predict HTTP/1.1" 200 -]
+[2024-03-18 20:46:23,613: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-18 20:46:23,652: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-18 20:46:25,929: INFO: _internal: 127.0.0.1 - - [18/Mar/2024 20:46:25] "GET / HTTP/1.1" 200 -]
+[2024-03-18 20:46:52,621: INFO: _internal: 127.0.0.1 - - [18/Mar/2024 20:46:52] "POST /predict HTTP/1.1" 200 -]
+[2024-03-18 20:47:03,748: INFO: _internal: 127.0.0.1 - - [18/Mar/2024 20:47:03] "POST /predict HTTP/1.1" 200 -]
+[2024-03-18 20:47:12,785: INFO: _internal: 127.0.0.1 - - [18/Mar/2024 20:47:12] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 09:40:57,463: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-24 09:40:57,464: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-24 09:41:05,346: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 09:41:05] "GET / HTTP/1.1" 200 -]
+[2024-03-24 09:41:18,019: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 09:41:18] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 09:53:35,592: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-24 09:53:35,592: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-24 09:53:39,904: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 09:53:39] "GET / HTTP/1.1" 200 -]
+[2024-03-24 09:53:47,374: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 09:53:47] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:00:25,271: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-24 10:00:25,272: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-24 10:00:27,273: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:00:27] "GET / HTTP/1.1" 200 -]
+[2024-03-24 10:00:35,617: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:00:35] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:00:47,547: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:00:47] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:00:54,399: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:00:54] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:01:01,344: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:01:01] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:02:13,625: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021C793D18A0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-24 10:02:13,636: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:02:13] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:02:45,432: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021C76E2F9C0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-24 10:02:45,442: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:02:45] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:39:42,904: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-24 10:39:42,904: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-24 10:39:51,216: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:39:51] "GET / HTTP/1.1" 200 -]
+[2024-03-24 10:39:56,968: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:39:56] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:40:02,922: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:40:02] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:40:08,427: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:40:08] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:41:05,893: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-24 10:41:05,894: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-24 10:41:07,312: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:41:07] "GET / HTTP/1.1" 200 -]
+[2024-03-24 10:41:12,773: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:41:12] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:41:19,312: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:41:19] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:41:25,991: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:41:25] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:42:11,719: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-24 10:42:11,720: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-24 10:42:12,929: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:42:12] "GET / HTTP/1.1" 200 -]
+[2024-03-24 10:42:23,615: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:42:23] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:42:53,659: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 10:42:53] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 10:46:36,333: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-24 10:46:36,343: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-24 10:46:36,351: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-24 10:46:36,352: INFO: common: created directory at: artifacts]
+[2024-03-24 10:46:36,353: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-24 10:46:36,354: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-24 10:57:06,499: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-03-24 10:57:07,305: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-24 10:57:07,305: INFO: main: *******************]
+[2024-03-24 10:57:07,306: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-03-24 10:57:07,308: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-24 10:57:07,311: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-24 10:57:07,311: INFO: common: created directory at: artifacts]
+[2024-03-24 10:57:07,312: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-24 10:57:07,878: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-24 10:57:08,101: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-03-24 10:57:08,102: INFO: main: *******************]
+[2024-03-24 10:57:08,103: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-03-24 10:57:08,106: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-24 10:57:08,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-24 10:57:08,110: INFO: common: created directory at: artifacts]
+[2024-03-24 10:57:08,111: INFO: common: created directory at: artifacts\training]
+[2024-03-24 10:59:29,982: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-03-24 10:59:29,983: INFO: main: *******************]
+[2024-03-24 10:59:29,983: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-03-24 10:59:29,987: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-24 10:59:29,990: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-24 10:59:29,991: INFO: common: created directory at: artifacts]
+[2024-03-24 10:59:41,845: INFO: common: json file saved at: scores.json]
+[2024-03-24 10:59:41,846: INFO: common: json file saved at: scores.json]
+[2024-03-24 10:59:41,847: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-03-24 11:00:24,505: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.29.55.108:5000]
+[2024-03-24 11:00:24,506: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-24 11:00:26,584: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:00:26] "GET / HTTP/1.1" 200 -]
+[2024-03-24 11:00:31,662: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:00:31] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 11:00:38,108: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:00:38] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 11:00:43,004: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:00:43] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 11:00:57,916: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:00:57] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 11:01:03,801: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001D3EFFB1310> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-24 11:01:03,806: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:01:03] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 11:01:09,779: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001D3EFFB1700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-24 11:01:09,785: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:01:09] "POST /predict HTTP/1.1" 200 -]
+[2024-03-24 11:01:15,377: INFO: _internal: 127.0.0.1 - - [24/Mar/2024 11:01:15] "POST /predict HTTP/1.1" 200 -]

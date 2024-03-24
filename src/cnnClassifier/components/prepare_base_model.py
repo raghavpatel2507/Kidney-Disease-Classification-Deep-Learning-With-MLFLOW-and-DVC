@@ -34,7 +34,7 @@ class PrepareBaseModel:
         flatten_in = tf.keras.layers.Flatten()(model.output)
         prediction = tf.keras.layers.Dense(
             units=classes,
-            activation="softmax"
+            activation="sigmoid"
         )(flatten_in)
 
         full_model = tf.keras.models.Model(

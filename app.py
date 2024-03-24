@@ -6,8 +6,6 @@ from cnnClassifier.pipeline.prediction import PredictionPipeline
 
 
 
-os.putenv('LANG', 'en_US.UTF-8')
-os.putenv('LC_ALL', 'en_US.UTF-8')
 
 app = Flask(__name__)
 CORS(app)
@@ -30,8 +28,8 @@ def home():
 @app.route("/train", methods=['GET','POST'])
 @cross_origin()
 def trainRoute():
-    #os.system("python main.py")
-    os.system("dvc repro")
+    os.system("python main.py")
+    #os.system("dvc repro")
     return "Training done successfully!"
 
 
