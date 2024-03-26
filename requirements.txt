@@ -6,8 +6,8 @@ notebook
 numpy
 matplotlib
 seaborn
-python-box==6.0.2 ##use for the exception handling
-pyYAML  ##reading the yaml file
+python-box==6.0.2 
+pyYAML 
 tqdm
 ensure==1.0.2
 joblib
@@ -16,5 +16,5 @@ scipy
 Flask
 Flask-Cors
 gdown
-gunicorn==21.2.0
+
 -e .
