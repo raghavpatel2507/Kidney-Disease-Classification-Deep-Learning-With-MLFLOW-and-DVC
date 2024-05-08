@@ -16,5 +16,6 @@ scipy
 Flask
 Flask-Cors
 gdown
+gunicorn
 
 -e .

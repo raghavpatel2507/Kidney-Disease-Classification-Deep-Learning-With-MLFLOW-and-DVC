@@ -67,3 +67,8 @@ export MLFLOW_TRACKING_PASSWORD=ee9963e0e31b32b22da0a6fba87181560614bee1
 2.dvc repro
 
 3.dvc dag
+
+
+```bash
+975050350466.dkr.ecr.ap-south-1.amazonaws.com/kidney
+```

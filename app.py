@@ -6,7 +6,7 @@ from cnnClassifier.pipeline.prediction import PredictionPipeline
 
 
 
-
+    
 app = Flask(__name__)
 CORS(app)
 
