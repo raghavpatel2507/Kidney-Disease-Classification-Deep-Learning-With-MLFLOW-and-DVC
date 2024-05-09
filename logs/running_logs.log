@@ -1599,3 +1599,579 @@ x==========x]
 x==========x]
 [2024-05-08 09:44:11,717: INFO: _internal: 127.0.0.1 - - [08/May/2024 09:44:11] "GET /train HTTP/1.1" 200 -]
 [2024-05-08 09:44:11,753: INFO: _internal: 127.0.0.1 - - [08/May/2024 09:44:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-05-08 18:28:16,037: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:28:16,038: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:28:18,871: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:28:18] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:28:41,925: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:28:41] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:28:55,215: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:28:55] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:29:25,379: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:29:25] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:29:31,800: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:29:31] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:35:32,281: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:35:32,284: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:35:34,452: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:35:34] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:35:41,820: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:35:41] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:35:48,961: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:35:48] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:36:02,004: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:36:02] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:36:07,993: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:36:07] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:36:14,459: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000018B8174E3A0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-05-08 18:36:14,469: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:36:14] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:38:02,184: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:38:02,185: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:38:04,012: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:38:04] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:38:25,058: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-05-08 18:38:25,065: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 18:38:25,079: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 18:38:25,081: INFO: common: created directory at: artifacts]
+[2024-05-08 18:38:25,083: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-08 18:38:25,085: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 18:38:59,507: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 18:39:01,084: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-05-08 18:39:01,086: INFO: main: *******************]
+[2024-05-08 18:39:01,087: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-05-08 18:39:01,095: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 18:39:01,100: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 18:39:01,104: INFO: common: created directory at: artifacts]
+[2024-05-08 18:39:01,109: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-05-08 18:39:01,874: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-08 18:39:02,509: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-05-08 18:39:02,509: INFO: main: *******************]
+[2024-05-08 18:39:02,510: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-05-08 18:39:02,515: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 18:39:02,518: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 18:39:02,520: INFO: common: created directory at: artifacts]
+[2024-05-08 18:39:02,522: INFO: common: created directory at: artifacts\training]
+[2024-05-08 18:41:43,478: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-05-08 18:41:43,478: INFO: main: *******************]
+[2024-05-08 18:41:43,479: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-05-08 18:41:43,482: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 18:41:43,485: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 18:41:43,487: INFO: common: created directory at: artifacts]
+[2024-05-08 18:41:57,677: INFO: common: json file saved at: scores.json]
+[2024-05-08 18:41:57,680: INFO: common: json file saved at: scores.json]
+[2024-05-08 18:41:57,680: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-05-08 18:41:58,359: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:41:58] "GET /train HTTP/1.1" 200 -]
+[2024-05-08 18:41:58,403: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:41:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-05-08 18:42:18,835: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:42:18] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:42:24,411: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 42, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\prediction.py", line 14, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model (1).h5
+[2024-05-08 18:42:24,451: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:42:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-05-08 18:43:23,284: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:43:23,285: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:43:25,665: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:43:25] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:43:33,305: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:43:33] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:43:46,752: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:43:46] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:43:56,055: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:43:56] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:44:10,484: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:44:10] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:48:40,004: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:48:40,005: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:48:41,550: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:48:41] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:48:50,379: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:48:50] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:48:56,733: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:48:56] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:49:52,674: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:49:52,674: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:49:54,871: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:49:54] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:50:01,310: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:50:01] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:50:24,326: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:50:24] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:50:31,960: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:50:31] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:50:38,556: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:50:38] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:51:00,867: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000267E7AB5280> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-05-08 18:51:00,878: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:51:00] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:51:06,960: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000267E77699D0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-05-08 18:51:06,977: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:51:06] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:52:20,147: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:52:20,149: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:52:22,431: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:52:22] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:52:28,919: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:52:28] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:52:35,996: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:52:35] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:53:28,701: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:53:28,703: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:53:31,570: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:53:31] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:53:37,482: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:53:37] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:53:43,243: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:53:43] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:54:06,472: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:54:06] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:57:07,554: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 18:57:07,555: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 18:57:14,190: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:57:14] "GET / HTTP/1.1" 200 -]
+[2024-05-08 18:57:20,093: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:57:20] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 18:57:29,104: INFO: _internal: 127.0.0.1 - - [08/May/2024 18:57:29] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 19:00:57,848: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 19:00:57,849: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 19:00:59,512: INFO: _internal: 127.0.0.1 - - [08/May/2024 19:00:59] "GET / HTTP/1.1" 200 -]
+[2024-05-08 19:01:05,482: INFO: _internal: 127.0.0.1 - - [08/May/2024 19:01:05] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 19:01:11,956: INFO: _internal: 127.0.0.1 - - [08/May/2024 19:01:11] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 20:56:35,810: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 20:56:35,810: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 20:56:39,412: INFO: _internal: 127.0.0.1 - - [08/May/2024 20:56:39] "GET / HTTP/1.1" 200 -]
+[2024-05-08 20:57:08,948: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-05-08 20:57:08,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 20:57:08,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 20:57:08,976: INFO: common: created directory at: artifacts]
+[2024-05-08 20:57:08,978: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-08 20:57:08,979: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:02:49,090: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:02:50,749: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-05-08 21:02:50,751: INFO: main: *******************]
+[2024-05-08 21:02:50,751: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-05-08 21:02:50,756: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:02:50,762: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:02:50,764: INFO: common: created directory at: artifacts]
+[2024-05-08 21:02:50,766: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-05-08 21:02:51,510: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-08 21:02:51,897: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-05-08 21:02:51,898: INFO: main: *******************]
+[2024-05-08 21:02:51,898: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-05-08 21:02:51,903: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:02:51,908: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:02:51,909: INFO: common: created directory at: artifacts]
+[2024-05-08 21:02:51,911: INFO: common: created directory at: artifacts\training]
+[2024-05-08 21:10:08,733: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-05-08 21:10:08,734: INFO: main: *******************]
+[2024-05-08 21:10:08,734: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-05-08 21:10:08,737: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:10:08,741: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:10:08,742: INFO: common: created directory at: artifacts]
+[2024-05-08 21:10:23,790: INFO: common: json file saved at: scores.json]
+[2024-05-08 21:10:23,792: INFO: common: json file saved at: scores.json]
+[2024-05-08 21:10:23,792: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-05-08 21:10:24,398: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:10:24] "GET /train HTTP/1.1" 200 -]
+[2024-05-08 21:11:45,740: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 21:11:45,741: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 21:11:55,015: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:11:55] "GET / HTTP/1.1" 200 -]
+[2024-05-08 21:12:01,776: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:12:01] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 21:12:16,644: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:12:16] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 21:12:29,010: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:12:29] "POST /predict HTTP/1.1" 200 -]
+[2024-05-08 21:15:18,052: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 21:15:18,053: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 21:15:20,101: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:15:20] "GET / HTTP/1.1" 200 -]
+[2024-05-08 21:15:40,279: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-05-08 21:15:40,285: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:15:40,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:15:40,300: INFO: common: created directory at: artifacts]
+[2024-05-08 21:15:40,302: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-08 21:15:40,303: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:18:45,590: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:18:45] "GET /train HTTP/1.1" 200 -]
+[2024-05-08 21:19:12,810: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 21:19:12,810: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 21:19:15,332: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:19:15] "GET / HTTP/1.1" 200 -]
+[2024-05-08 21:19:34,019: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-05-08 21:19:34,025: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:19:34,029: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:19:34,031: INFO: common: created directory at: artifacts]
+[2024-05-08 21:19:34,034: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-08 21:19:34,035: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:24:47,182: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:24:48,959: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-05-08 21:24:48,961: INFO: main: *******************]
+[2024-05-08 21:24:48,961: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-05-08 21:24:48,966: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:24:48,970: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:24:48,973: INFO: common: created directory at: artifacts]
+[2024-05-08 21:24:48,976: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-05-08 21:24:49,860: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-08 21:24:50,802: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-05-08 21:24:50,804: INFO: main: *******************]
+[2024-05-08 21:24:50,804: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-05-08 21:24:50,811: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:24:50,816: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:24:50,818: INFO: common: created directory at: artifacts]
+[2024-05-08 21:24:50,820: INFO: common: created directory at: artifacts\training]
+[2024-05-08 21:24:56,319: ERROR: main: Graph execution error:
+
+Detected at node 'AssignVariableOp_1' defined at (most recent call last):
+    File "main.py", line 33, in <module>
+      model_trainer.main()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+      training.train()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+      self.model.fit(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1249, in run_step
+      outputs = model.train_step(data)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1054, in train_step
+      self.optimizer.minimize(loss, self.trainable_variables, tape=tape)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 543, in minimize
+      self.apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1174, in apply_gradients
+      return super().apply_gradients(grads_and_vars, name=name)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 650, in apply_gradients
+      iteration = self._internal_apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1200, in _internal_apply_gradients
+      return tf.__internal__.distribute.interim.maybe_merge_call(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1250, in _distributed_apply_gradients_fn
+      distribution.extended.update(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1247, in apply_grad_to_update_var
+      return self._update_step(grad, var)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 240, in _update_step
+      self.update_step(gradient, variable)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\sgd.py", line 179, in update_step
+      m.assign(-gradient * lr + m * momentum)
+Node: 'AssignVariableOp_1'
+Trying to assign to variable with tensor with wrong shape. Expected [1] got [2]
+	 [[{{node AssignVariableOp_1}}]] [Op:__inference_train_function_1463]]
+Traceback (most recent call last):
+  File "main.py", line 33, in <module>
+    model_trainer.main()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+    training.train()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+    self.model.fit(
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\tensorflow\python\eager\execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node 'AssignVariableOp_1' defined at (most recent call last):
+    File "main.py", line 33, in <module>
+      model_trainer.main()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+      training.train()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+      self.model.fit(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1249, in run_step
+      outputs = model.train_step(data)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1054, in train_step
+      self.optimizer.minimize(loss, self.trainable_variables, tape=tape)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 543, in minimize
+      self.apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1174, in apply_gradients
+      return super().apply_gradients(grads_and_vars, name=name)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 650, in apply_gradients
+      iteration = self._internal_apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1200, in _internal_apply_gradients
+      return tf.__internal__.distribute.interim.maybe_merge_call(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1250, in _distributed_apply_gradients_fn
+      distribution.extended.update(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1247, in apply_grad_to_update_var
+      return self._update_step(grad, var)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 240, in _update_step
+      self.update_step(gradient, variable)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\sgd.py", line 179, in update_step
+      m.assign(-gradient * lr + m * momentum)
+Node: 'AssignVariableOp_1'
+Trying to assign to variable with tensor with wrong shape. Expected [1] got [2]
+	 [[{{node AssignVariableOp_1}}]] [Op:__inference_train_function_1463]
+[2024-05-08 21:24:57,054: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:24:57] "GET /train HTTP/1.1" 200 -]
+[2024-05-08 21:31:57,119: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.21.0.159:8080]
+[2024-05-08 21:31:57,120: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 21:32:00,398: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:32:00] "GET / HTTP/1.1" 200 -]
+[2024-05-08 21:32:30,472: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-05-08 21:32:30,478: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:32:30,485: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:32:30,487: INFO: common: created directory at: artifacts]
+[2024-05-08 21:32:30,489: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-08 21:32:30,490: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:39:57,514: ERROR: main: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))]
+Traceback (most recent call last):
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 737, in _error_catcher
+    yield
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 852, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 835, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\http\client.py", line 459, in read
+    n = self.readinto(b)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\http\client.py", line 503, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\ssl.py", line 1132, in read
+    return self._sslobj.read(len, buffer)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\requests\models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 1033, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 925, in read
+    data = self._raw_read(amt)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 881, in _raw_read
+    self._fp.close()
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 754, in _error_catcher
+    raise ProtocolError(f"Connection broken: {e!r}", e) from e
+urllib3.exceptions.ProtocolError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 11, in <module>
+    data_ingestion.main()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\gdown\download.py", line 344, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\requests\models.py", line 818, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None)", ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+[2024-05-08 21:39:58,564: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:39:58] "GET /train HTTP/1.1" 200 -]
+[2024-05-08 21:40:27,508: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-08 21:40:27,511: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-08 21:40:31,062: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:40:31] "GET / HTTP/1.1" 200 -]
+[2024-05-08 21:40:50,905: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-05-08 21:40:50,912: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:40:50,917: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:40:50,921: INFO: common: created directory at: artifacts]
+[2024-05-08 21:40:50,923: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-05-08 21:40:50,925: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:41:55,973: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-05-08 21:41:57,850: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-05-08 21:41:57,851: INFO: main: *******************]
+[2024-05-08 21:41:57,851: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-05-08 21:41:57,856: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:41:57,861: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:41:57,863: INFO: common: created directory at: artifacts]
+[2024-05-08 21:41:57,866: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-05-08 21:41:58,631: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-05-08 21:41:59,275: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-05-08 21:41:59,276: INFO: main: *******************]
+[2024-05-08 21:41:59,277: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-05-08 21:41:59,283: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-05-08 21:41:59,288: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-05-08 21:41:59,290: INFO: common: created directory at: artifacts]
+[2024-05-08 21:41:59,330: INFO: common: created directory at: artifacts\training]
+[2024-05-08 21:42:05,188: ERROR: main: Graph execution error:
+
+Detected at node 'AssignVariableOp_1' defined at (most recent call last):
+    File "main.py", line 33, in <module>
+      model_trainer.main()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+      training.train()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+      self.model.fit(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1249, in run_step
+      outputs = model.train_step(data)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1054, in train_step
+      self.optimizer.minimize(loss, self.trainable_variables, tape=tape)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 543, in minimize
+      self.apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1174, in apply_gradients
+      return super().apply_gradients(grads_and_vars, name=name)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 650, in apply_gradients
+      iteration = self._internal_apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1200, in _internal_apply_gradients
+      return tf.__internal__.distribute.interim.maybe_merge_call(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1250, in _distributed_apply_gradients_fn
+      distribution.extended.update(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1247, in apply_grad_to_update_var
+      return self._update_step(grad, var)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 240, in _update_step
+      self.update_step(gradient, variable)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\sgd.py", line 179, in update_step
+      m.assign(-gradient * lr + m * momentum)
+Node: 'AssignVariableOp_1'
+Trying to assign to variable with tensor with wrong shape. Expected [1] got [2]
+	 [[{{node AssignVariableOp_1}}]] [Op:__inference_train_function_1463]]
+Traceback (most recent call last):
+  File "main.py", line 33, in <module>
+    model_trainer.main()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+    training.train()
+  File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+    self.model.fit(
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\tensorflow\python\eager\execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node 'AssignVariableOp_1' defined at (most recent call last):
+    File "main.py", line 33, in <module>
+      model_trainer.main()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\pipeline\stage_03_model_training.py", line 21, in main
+      training.train()
+    File "c:\users\hp\onedrive\desktop\sgp\kidney-disease-classification-deep-learning\src\cnnClassifier\components\model_training.py", line 76, in train
+      self.model.fit(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1249, in run_step
+      outputs = model.train_step(data)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\engine\training.py", line 1054, in train_step
+      self.optimizer.minimize(loss, self.trainable_variables, tape=tape)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 543, in minimize
+      self.apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1174, in apply_gradients
+      return super().apply_gradients(grads_and_vars, name=name)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 650, in apply_gradients
+      iteration = self._internal_apply_gradients(grads_and_vars)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1200, in _internal_apply_gradients
+      return tf.__internal__.distribute.interim.maybe_merge_call(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1250, in _distributed_apply_gradients_fn
+      distribution.extended.update(
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 1247, in apply_grad_to_update_var
+      return self._update_step(grad, var)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\optimizer.py", line 240, in _update_step
+      self.update_step(gradient, variable)
+    File "C:\Users\hp\anaconda3\envs\kidney\lib\site-packages\keras\optimizers\sgd.py", line 179, in update_step
+      m.assign(-gradient * lr + m * momentum)
+Node: 'AssignVariableOp_1'
+Trying to assign to variable with tensor with wrong shape. Expected [1] got [2]
+	 [[{{node AssignVariableOp_1}}]] [Op:__inference_train_function_1463]
+[2024-05-08 21:42:05,912: INFO: _internal: 127.0.0.1 - - [08/May/2024 21:42:05] "GET /train HTTP/1.1" 200 -]
+[2024-05-09 16:46:55,832: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-09 16:46:55,833: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-09 16:46:59,010: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:46:59] "GET / HTTP/1.1" 200 -]
+[2024-05-09 16:47:04,470: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:47:04] "POST /predict HTTP/1.1" 200 -]
+[2024-05-09 16:47:15,062: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:47:15] "POST /predict HTTP/1.1" 200 -]
+[2024-05-09 16:49:42,794: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-09 16:49:42,794: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-09 16:49:45,228: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:49:45] "GET / HTTP/1.1" 200 -]
+[2024-05-09 16:49:45,366: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:49:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-05-09 16:53:14,937: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-09 16:53:14,937: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-09 16:53:17,178: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:53:17] "GET / HTTP/1.1" 200 -]
+[2024-05-09 16:53:21,620: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:53:21] "POST /predict HTTP/1.1" 200 -]
+[2024-05-09 16:55:20,075: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.29.55.108:8080]
+[2024-05-09 16:55:20,077: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-05-09 16:55:21,525: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:55:21] "GET / HTTP/1.1" 200 -]
+[2024-05-09 16:55:26,584: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:55:26] "POST /predict HTTP/1.1" 200 -]
+[2024-05-09 16:55:36,497: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:55:36] "POST /predict HTTP/1.1" 200 -]
+[2024-05-09 16:55:37,417: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:55:37] "POST /predict HTTP/1.1" 200 -]
+[2024-05-09 16:55:38,270: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:55:38] "POST /predict HTTP/1.1" 200 -]
+[2024-05-09 16:55:41,620: INFO: _internal: 127.0.0.1 - - [09/May/2024 16:55:41] "POST /predict HTTP/1.1" 200 -]

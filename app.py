@@ -1,50 +1,51 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, render_template, request, jsonify
 import os
-from flask_cors import CORS, cross_origin
-from cnnClassifier.utils.common import decodeImage
-from cnnClassifier.pipeline.prediction import PredictionPipeline
+import cv2
+import numpy as np
+from tensorflow.keras.models import load_model
 
-
-
-    
 app = Flask(__name__)
-CORS(app)
+UPLOAD_FOLDER = 'uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+# Load the model
+model = load_model("model\model.h5")
 
-class ClientApp:
-    def __init__(self):
-        self.filename = "inputImage.jpg"
-        self.classifier = PredictionPipeline(self.filename)
+def preprocess_image(image_path):
+    img = cv2.imread(image_path) 
+    img = np.expand_dims(img, axis=0)
+    return img
 
-
-@app.route("/", methods=['GET'])
-@cross_origin()
-def home():
+@app.route('/')
+def index():
     return render_template('index.html')
 
+@app.route('/predict', methods=['POST'])
+def predict():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file part'})
+    
+    file = request.files['file']
+    
+    if file.filename == '':
+        return jsonify({'error': 'No selected file'})
+    
+   
+    filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+    file.save(filename)
+    
+    
+    input_image = preprocess_image(filename)
+    
+    
+    prediction = model.predict(input_image)
+    
+    
+    result = "Normal" if prediction < 0.5 else "Tumor"
+    
+    return jsonify({'result': result})
 
-
-
-@app.route("/train", methods=['GET','POST'])
-@cross_origin()
-def trainRoute():
-    os.system("python main.py")
-    #os.system("dvc repro")
-    return "Training done successfully!"
-
-
-
-@app.route("/predict", methods=['POST'])
-@cross_origin()
-def predictRoute():
-    image = request.json['image']
-    decodeImage(image, clApp.filename)
-    result = clApp.classifier.predict()
-    return jsonify(result)
-
-
-if __name__ == "__main__":
-    clApp = ClientApp()
-    #hello i am raghav patel
-    app.run(host='0.0.0.0', port=8080) 
-
+if __name__ == '__main__':
+    if not os.path.exists(UPLOAD_FOLDER):
+        os.makedirs(UPLOAD_FOLDER)
+    app.run(host='0.0.0.0', port=8080)

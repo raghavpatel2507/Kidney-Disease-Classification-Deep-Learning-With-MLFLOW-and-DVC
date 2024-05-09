@@ -33,7 +33,7 @@ class PrepareBaseModel:
 
         flatten_in = tf.keras.layers.Flatten()(model.output)
         prediction = tf.keras.layers.Dense(
-            units=classes,
+            units=1,
             activation="sigmoid"
         )(flatten_in)
 
