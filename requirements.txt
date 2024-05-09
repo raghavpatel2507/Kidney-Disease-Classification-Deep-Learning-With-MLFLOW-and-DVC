@@ -17,5 +17,6 @@ Flask
 Flask-Cors
 gdown
 gunicorn
+opencv-python-headless
 
 -e .
