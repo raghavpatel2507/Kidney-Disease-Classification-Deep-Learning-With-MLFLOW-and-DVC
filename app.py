@@ -13,6 +13,7 @@ model = load_model("model\model.h5")
 
 def preprocess_image(image_path):
     img = cv2.imread(image_path) 
+    img = cv2.resize(img, (224, 224))
     img = np.expand_dims(img, axis=0)
     return img
 
